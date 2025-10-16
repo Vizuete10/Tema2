@@ -2,7 +2,7 @@ package diagramas;
 
 import java.util.Scanner; // Importamos la clase Scanner para leer datos desde el teclado
 
-public class Ejercicio2 {
+public class Ejercicio02 {
 	public static void main(String[] args) {
 		
 		// Creamos un objeto Scanner para leer la entrada del usuario

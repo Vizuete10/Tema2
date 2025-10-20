@@ -18,11 +18,12 @@ public class Ejercicio05 {
 		String jugada1;
 		String jugada2;
 
-		// Pedimos al usuario
-		System.out.println("Introduzca el movimineto del jugador 1 (PIEDRA, PAPEL o TIJERA: ");
+		// Pedimos al usuario el primer movimiento
+		System.out.println("Introduzca el movimiento del jugador 1 (PIEDRA, PAPEL o TIJERA: ");
 		jugada1 = sc.next();
 
-		System.out.println("Introduzca el movimineto del jugador 2 (PIEDRA, PAPEL o TIJERA: ");
+		// Pedimos al usuario el segundo movimiento
+		System.out.println("Introduzca el movimiento del jugador 2 (PIEDRA, PAPEL o TIJERA: ");
 		jugada2 = sc.next();
 
 		if (!jugada1.equals(PIEDRA) && !jugada1.equals(PAPEL) && !jugada1.equals(TIJERA)) {
@@ -44,7 +45,7 @@ public class Ejercicio05 {
 			// Gana el jugador 2
 			System.out.println("Gana el jugador 2");
 		}
-		
+		// Cerramos el Scanner
 		sc.close();
 	}
 

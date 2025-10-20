@@ -6,10 +6,13 @@ public class Ejercicio04 {
 
 	public static void main(String[] args) {
 
+		// Creamos el Scanner
 		Scanner sc = new Scanner(System.in);
 
+		// Declaramos la variable para el número
 		int numero;
 
+		// Pedimos al usuario que introduzca un número
 		System.out.println("Introduce un número: ");
 		numero = sc.nextInt();
 
@@ -33,6 +36,7 @@ public class Ejercicio04 {
 
 		}
 
+		// Cerramos el Scanner
 		sc.close();
 	}
 }

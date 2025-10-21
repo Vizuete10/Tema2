@@ -21,8 +21,9 @@ public class Ejercicio03 {
 		num2 = sc.nextInt();
 
 		// Imprimimos por pantalla las opciones y pedimos que eliga una
-	
-		System.out.println("Según este menu elige una de las 4 opciones escribiendo por pantalla la letra de la opción");
+
+		System.out
+				.println("Según este menu elige una de las 4 opciones escribiendo por pantalla la letra de la opción");
 		System.out.println("A. SUMAR NÚMEROS");
 		System.out.println("B. RESTAS NÚMEROS");
 		System.out.println("C. MULTIPLICAR NÚMEROS");
@@ -34,7 +35,7 @@ public class Ejercicio03 {
 		case "B", "b" -> System.out.println("La resta es : " + (num1 - num2));
 		case "C", "c" -> System.out.println("La multiplicación es : " + (num1 * num2));
 		case "D", "d" -> {
-			if (num2 !=0) {
+			if (num2 != 0) {
 				System.out.println("La división es : " + (double) (num1 / num2));
 			} else {
 				System.out.println("No se puede dividir entre 0");

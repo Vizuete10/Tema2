@@ -6,6 +6,45 @@ public class Ejercicio01 {
 
 	public static void main(String[] args) {
 
+		
+		/*
+		 *  Puebas minimas a realizar:
+		 *  
+		 *  1. Introducir un número fuera del rango; -1
+		 *  	Resultado esperado: "El número introducido debe estar entre 0 y 9999."
+		 *  	Resultado obtenido: "El número introducido debe estar entre 0 y 9999."
+		 *  
+		 *  2. Introducir un número en el rango y menor que 10; 8
+		 *  	Resultado esperado: "El número 8 es capicúa."
+		 *  	Resultado obtenido: "El número 8 es capicúa."
+		 * 
+		 * 	3. Introducir un número entre 10 y 100 y que sea capicúa; 11
+		 * 		Resultado esperado: "El número 11 es capicúa."
+		 * 		Resultado obtenido: "El número 11 es capicúa."
+		 * 
+		 * 	4. Introducir un número entre 10 y 100 y que no sea capicúa; 24
+		 * 	 	Resultado esperado: "El número 24 no es capicúa."
+		 * 		Resultado obtenido: "El número 24 no es capicúa."
+		 * 
+		 *  5. Introducir un número entre 100 y 1000 y que sea capicúa; 121
+		 *      Resultado esperado: "El número 121 es capicúa."
+		 *      Resultado obtenido: "El número 121 es capicúa."
+		 * 
+		 *  6. Introducir un número entre 100 y 1000 y que no sea capicúa; 123
+		 *      Resultado esperado: "El número 123 no es capicúa."
+		 *      Resultado obtenido: "El número 123 no es capicúa."
+		 * 
+		 *  7. Introducir un número entre 1000 y 9999 y que sea capicúa; 1221
+		 *      Resultado esperado: "El número 1221 es capicúa."
+		 *      Resultado obtenido: "El número 1221 es capicúa."
+		 * 
+		 *  8. Introducir un número entre 1000 y 9999 y que no sea capicúa; 1234
+		 *      Resultado esperado: "El número 1234 no es capicúa."
+		 *      Resultado obtenido: "El número 1234 no es capicúa."
+		 * 
+		 */
+		
+		
 		// Creamos el Scanner
 		Scanner sc = new Scanner(System.in);
 
@@ -30,6 +69,7 @@ public class Ejercicio01 {
 			System.out.println("El número " + numero + " es capicúa.");
 
 		} else if (numero < 100) {
+			// Calculamos para obtener los digitos
 			digito1 = numero / 10;
 			digito2 = numero % 10;
 			
@@ -41,6 +81,7 @@ public class Ejercicio01 {
 
 			}
 		} else if (numero < 1000) {
+			// Calculamos para obtener los digitos
 			digito1 = numero / 100;
 			digito3 = numero % 10;
 			
@@ -52,6 +93,7 @@ public class Ejercicio01 {
 
 			}
 		} else {
+			// Calculamos para obtener los digitos
 			digito1 = numero / 1000;
 			digito2 = (numero / 100) % 10;
 			digito3 = (numero / 10) % 10;

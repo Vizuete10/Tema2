@@ -1,4 +1,4 @@
-package loops;
+package ejercicioswhile;
 
 import java.util.Scanner;
 

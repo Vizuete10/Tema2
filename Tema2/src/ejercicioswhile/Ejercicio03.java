@@ -1,11 +1,11 @@
-package loops;
+package ejercicioswhile;
 
 import java.util.Scanner;
 
-public class Ejercicio02 {
+public class Ejercicio03 {
 
 	public static void main(String[] args) {
-
+	
 		//Creamos un nuevo Scanner
 		Scanner sc = new Scanner(System.in);
 		
@@ -15,6 +15,12 @@ public class Ejercicio02 {
 		//Declaramos una variable para la suma
 		int suma=0;
 		
+		//Declaramos una variable para la cantidad de números
+		int cantNum=0;
+		
+		//Declaramos una variable para la media
+		int media=0;
+		
 		//Pedimos al usuario que introduzca un número
 		System.out.println("Introduce un número");
 		num = sc.nextInt();
@@ -22,21 +28,27 @@ public class Ejercicio02 {
 		//Mientras el número sea positivo
 		while (num>=0) {
 			
-			//Suma un número a la cantidad de números contados
-			suma++;
+			//Sumamos el número a la suma
+			suma+=num;
 			
-			//Seguimos pidiendo al usuario más números
+			//Sumamos un número a la cantidad de números
+			cantNum++;
+			
+			//Pedimos al usuario otro número
 			System.out.println("Introduce un número");
 			num = sc.nextInt();
 			
 		}
 		
-		//Imprimimos la suma
-		System.out.println("La suma es " + suma);
+		//Calculamos la media 
+		media = suma / cantNum;
+		
+		//Imprimimos la media
+		System.out.println("La media es " + media);
 		
 		//Cerramos el Scanner
 		sc.close();
-
+	
 	}
 
 }

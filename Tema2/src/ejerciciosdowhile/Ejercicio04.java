@@ -19,11 +19,13 @@ public class Ejercicio04 {
 		System.out.println("Intruduce un número del 1 al 10");
 		num = sc.nextInt();
 		
+		// Hacemos un bucle do while para mostrar la tabla de multiplicar
 		do {
 			System.out.println(num + "x" + multiplicacion + ":" + num*multiplicacion);
 			multiplicacion ++;
 		} while(multiplicacion<=10);
 		
+		// Cerramos el Scanner
 		sc.close();
 	}
 

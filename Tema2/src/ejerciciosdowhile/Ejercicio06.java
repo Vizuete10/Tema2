@@ -15,13 +15,13 @@ public class Ejercicio06 {
 		
 		do {
 			// Pedimos al usuario el primer movimiento
-			System.out.println("Introduzca el movimiento del jugador 1 (PIEDRA, PAPEL o TIJERA: ");
+			System.out.println("Introduzca el movimiento del jugador 1 (PIEDRA, PAPEL o TIJERA): ");
 			jugada1 = sc.next().toUpperCase();
 		} while (!jugada1.equals("PIEDRA") && !jugada1.equals("PAPEL") && !jugada1.equals("TIJERA"));
 		
 		do {
 			// Pedimos al usuario el segundo movimiento
-			System.out.println("Introduzca el movimiento del jugador 2 (PIEDRA, PAPEL o TIJERA: ");
+			System.out.println("Introduzca el movimiento del jugador 2 (PIEDRA, PAPEL o TIJERA): ");
 			jugada2 = sc.next().toUpperCase();
 		} while (!jugada2.equals("PIEDRA") && !jugada2.equals("PAPEL") && !jugada2.equals("TIJERA"));
 		

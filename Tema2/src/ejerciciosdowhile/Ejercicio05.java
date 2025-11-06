@@ -26,8 +26,7 @@ public class Ejercicio05 {
 		// Generamos el número aleatorio
 		numAleatorio = rd.nextInt(min, max);
 		
-		// 
-		System.out.println(numAleatorio);
+		// Iniciamos el juego
 		System.out.println("¿El número es mayor, menor o igual que " + numAleatorio + "?");
 		
 		do {
@@ -36,11 +35,15 @@ public class Ejercicio05 {
 			
 			// Comprobamos el resultado
 			if (resultado.equals("mayor")) {
-				numAleatorio = rd.nextInt(numAleatorio + 1, max);
+				min = numAleatorio + 1;
+				numAleatorio = rd.nextInt(min, max);
 				System.out.println("¿El número es mayor, menor o igual que " + numAleatorio + "?");
+				
 			} else if (resultado.equals("menor")) {
-				numAleatorio = rd.nextInt(min, numAleatorio);
+				max = numAleatorio;
+				numAleatorio = rd.nextInt(min, max);
 				System.out.println("¿El número es mayor, menor o igual que " + numAleatorio + "?");
+				
 			} else if (resultado.equals("igual")) {
 				System.out.println("¡He adivinado tu número!");
 			} else {

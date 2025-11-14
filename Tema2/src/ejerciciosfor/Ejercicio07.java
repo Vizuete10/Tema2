@@ -6,14 +6,14 @@ public class Ejercicio07 {
 
 	public static void main(String[] args) {
 		// Creamos el Scanner
-		Scanner scanner = new Scanner(System.in);
+		Scanner sc = new Scanner(System.in);
 
 		// Declaramos la variable para almacenar el número introducido por el usuario
 		int numero;
 
 		// Pedimos al usuario que introduzca un número
 		System.out.print("Introduce un número entero positivo: ");
-		numero = scanner.nextInt();
+		numero = sc.nextInt();
 
 		// Declaramos la variable para indicar si el número es primo
 		boolean esPrimo = true;
@@ -36,7 +36,7 @@ public class Ejercicio07 {
 			System.out.println(numero + " no es un número primo.");
 		}
 		// Cerramos el Scanner
-		scanner.close();
+		sc.close();
 
 	}
 

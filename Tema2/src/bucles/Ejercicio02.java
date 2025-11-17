@@ -13,7 +13,10 @@ public class Ejercicio02 {
 
 		// Declaramos la variable para contar los números primos
 		int contadorPrimos = 0;
-
+		
+		// Declaramos la variable para el divisor
+		int divisor;
+		
 		// Pedimos al usuario que introduzca un número
 		System.out.print("Introduce un número entero positivo: ");
 		n = sc.nextInt();
@@ -21,18 +24,19 @@ public class Ejercicio02 {
 		// Declaramos la variable para indicar si el número es primo
 		boolean esPrimo = true;
 
-		for (int numero = 1; numero <= n; numero++) {
+		for (int cont = 2; cont <= n; cont++) {
 			esPrimo = true;
+			
+			divisor = 2;
+			
+			esPrimo = true;
+			
 			// Comprobamos si el número es primo
-
-			if (numero == 1) {
-				esPrimo = false;
-			} else {
-				for (int cont = 2; cont < numero; cont++) {
-					if (numero % cont == 0) {
-						esPrimo = false;
-					}
+			while (divisor < cont && esPrimo) {
+				if (cont % divisor == 0) {
+					esPrimo = false;
 				}
+				divisor++;
 			}
 
 			// Mostramos el resultado

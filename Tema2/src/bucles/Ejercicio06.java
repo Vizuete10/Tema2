@@ -20,15 +20,15 @@ public class Ejercicio06 {
 		if (N < 1 ) {
 			System.out.println("La altura y la base deben ser números enteros positivos mayores que 0.");
 			} else {
-				// Bucle para las filas (altura)
+				// Bucle para las filas
 				for (int i = 1; i <= N; i++) {
 					
 					// Bucle para los espacios en blanco
-					for (int j = 0; j < N - i; j++) {
+					for (int espacios = 0; espacios < N - i; espacios++) {
 		                System.out.print(" ");
 		            }
 					// Bucle para los asteriscos
-					for (int k = 0; k < i; k++) {
+					for (int asterisco = 0; asterisco < i; asterisco++) {
 		                System.out.print("* ");
 		            }
 

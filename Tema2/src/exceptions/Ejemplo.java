@@ -3,6 +3,7 @@ package exceptions;
 import java.util.InputMismatchException;
 
 import java.util.Scanner;
+
 public class Ejemplo {
 
 	public static void main(String[] args) {
@@ -19,7 +20,7 @@ public class Ejemplo {
 			// Aqui se coloca el codigo que puede generar un fallo
 			// si el usuario introduce un valor no numerico
 			// Java va a saltar al bloque catch
-			
+						
 			
 		int edad = sc.nextInt(); // Esta linea puede generar una excepcion ImputMismatchException, si el usuario introduce un valor no numerico
 		

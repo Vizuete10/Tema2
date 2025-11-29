@@ -7,12 +7,29 @@ public class Ejercicio09 {
     public static void main(String[] args) {
     	// Creamos un nuevo Scanner
     	 Scanner sc = new Scanner(System.in);
-    	// Pedimos al usuario que introduzca un número
-		System.out.print("Introduce una hora: ");
-		int horas = sc.nextInt();
-		
-		assert horas >= 0 && horas < 24 : "La hora debe estar entre 0 y 23";
-		
+    
+    	 // Declaramos una variable para el número
+    	 int numero;
+    	 
+    	 // Pedimos un número al usuario
+    	 System.out.print("Introduce un número entero positivo: ");
+    	 numero = sc.nextInt();
+    	 
+    	 // Contamos cuántos dígitos tiene el número
+    	 int contadorDigitos = 0;
+    	 
+    	 int numeroAuxiliar = numero;
+    	 
+    	 while (numeroAuxiliar > 0) {
+			 numeroAuxiliar /= 10;
+			 contadorDigitos++;
+		 }
+    	 
+    	 // Mostramos el resultado
+    	 System.out.println("El número " + numero + " tiene " + contadorDigitos + " dígitos.");
+		 
+    	 
+		 // Cerramos el Scanner
 		sc.close();
     	
     }
